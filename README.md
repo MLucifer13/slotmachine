@@ -1,53 +1,53 @@
-<h1 align="center">🎰 Slot Machine Game</h1>
-<h3 align="center">A simple Python-based slot machine game</h3>
+# Slot Machine Game 🎰
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.x-blue" alt="Python 3.x">
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License">
-</p>
+A simple command-line slot machine game implemented in Python. Players can deposit funds, place bets on multiple lines, and spin the slot machine to win or lose money based on randomized outcomes.
 
-- 🔄 Randomized slot machine spins with varying symbol counts and payouts
-- 💸 Bet on multiple lines, win or lose money based on symbol combinations
-- 🎯 Simple game logic with balance tracking for multiple spins
+## 📝 Features
 
-<h3 align="left">Features:</h3>
+- **Deposit Funds**: Start by depositing an initial balance.
+- **Bet on Lines**: Bet on up to 3 lines for each spin.
+- **Flexible Betting**: Choose your bet amount per line (within limits).
+- **Randomized Spins**: Each spin results in a random set of symbols.
+- **Payouts**: Winnings are calculated based on matching symbols and their assigned values.
+- **Track Balance**: Keep track of your current balance as you play.
 
-- 🎰 Deposit money to start the game
-- 🎲 Bet on 1-3 lines per spin
-- 💵 Adjustable bet amount per line
-- 🏆 Track winnings based on random symbol values
-- 🧮 Display randomized slot machine results in a 3x3 grid
+## 🎮 How to Play
 
-<h3 align="left">How to Play:</h3>
-<p align="left">
-1. Deposit funds<br>
-2. Choose the number of lines to bet on (1-3)<br>
-3. Place a bet for each line<br>
-4. Spin the slot machine and check your winnings!<br>
-</p>
+1. **Deposit Money**: Enter an amount to deposit and start playing.
+2. **Choose Lines**: Select how many lines you want to bet on (1 to 3).
+3. **Place a Bet**: Set the amount you want to bet per line.
+4. **Spin the Slot Machine**: Random symbols will appear in the 3x3 grid. If matching symbols appear on your chosen lines, you win!
+5. **Winnings**: Winnings are calculated based on the symbol values and the amount you bet.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-  <a href="https://www.python.org/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-  </a>
-</p>
+## 🎰 Symbol Values
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-  <a href="https://instagram.com/prabin_lucy" target="_blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="prabin_lucy" height="30" width="40" />
-  </a>
-</p>
+Each symbol has a different payout value and appears in different quantities on the slot machine:
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mlucifer13&show_icons=true&locale=en&layout=compact" alt="mlucifer13" />
-</p>
+| Symbol | Count | Value (Multiplier) |
+|--------|-------|--------------------|
+|   A    |   2   |        5x          |
+|   B    |   4   |        4x          |
+|   C    |   6   |        3x          |
+|   D    |   8   |        2x          |
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mlucifer13&show_icons=true&locale=en" alt="mlucifer13" />
-</p>
+The more rare the symbol, the higher the payout! You win by matching symbols across the columns in the selected lines.
 
-## License
+## 🔧 Code Overview
+
+- `check_winnings()`: Checks if the symbols on the betted lines match and calculates the winnings.
+- `get_slot_machine_spin()`: Randomly generates the slot machine spin based on the symbol counts.
+- `print_slot_machine()`: Displays the current slot machine spin in a grid format.
+- `deposit()`: Prompts the player to deposit an initial balance.
+- `get_number_of_lines()`: Allows the player to choose the number of lines to bet on.
+- `get_bet()`: Retrieves the player's bet per line and ensures it is within the allowed range.
+- `spin()`: Executes the main game round, calculates winnings, and updates the player's balance.
+- `main()`: The main loop to manage multiple game rounds and check if the player wants to continue or quit.
+
+## ⚙️ Requirements
+
+- Python 3.x
+
+## 📄 License
 
 This project is licensed under the MIT License.
+
